@@ -7,9 +7,11 @@ var FormView = {
   },
 
   handleSubmit: function(event) {
+    //var inputVal = document.getElementById("message").value;
     // Stop the browser from submitting the form
     event.preventDefault();
-    
+    //console.log(messages.Messages())
+    Parse.create(Messages());
     console.log('click!');
   },
 
